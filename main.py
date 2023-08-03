@@ -1,7 +1,6 @@
 from configuration import *
 import utils
 import re
-from pprint import pprint
 
 search_string = "samsung Galaxy s23 Ultra"
 cleaned_search_string = search_string.replace(" ", "+")
