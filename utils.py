@@ -55,10 +55,10 @@ def get_all_reviews_from_single_page(page_content) -> list:
             # if we have a tag with no class name, discard
             if not temp_class_data:
                 continue
-            class_name = " ".join(temp_class_data)
+            class_name = "".join(temp_class_data).replace(" ", "")
             # check if the class name of current div tag is part of the required class name
             # which are for a particular review information in consideration
-            if class_name in REVIEW_DETAILS_CLASS_NAMES:
+            if class_name in attr_list:
                 data[REVIEW_DETAILS_CLASS_NAMES[class_name]] = each_entry.text.replace("READ MORE", "")
                 attr_list.remove(class_name)
             # Once all the review information has been updated then stop looking

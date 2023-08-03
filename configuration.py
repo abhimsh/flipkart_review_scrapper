@@ -29,17 +29,18 @@ REVIEW_DETAILS_CLASS_NAMES = \
         "_2sc7ZR": "review_time",
         "_2-N8zT": "review_title",
         "t-ZTKy": "review_statement",
-        "_2sc7ZR _2V5EHH": "review_user_name",
+        "_2sc7ZR_2V5EHH": "review_user_name",
         "_2mcZGG": "review_usertype_and_place",
+        "_3LWZlK_1BLPMq": "review_rating",
     }
 
 PAGE_CHANGE = "&page={page_number}"
 CSV_HEADER = ["review_title", "review_statement",
               "review_user_name", "review_usertype", "review_place",
-              "review_time"]
+              "review_rating", "review_time", ]
 ALL_DATA_KEYS = \
     ["review_title", "review_statement", "review_user_name", "review_usertype_and_place",
-     "review_time"]
+     "review_rating", "review_time"]
 REVIEW_TIME = \
     {
         r"(\d+)\sday(|s)\sago": "days",
